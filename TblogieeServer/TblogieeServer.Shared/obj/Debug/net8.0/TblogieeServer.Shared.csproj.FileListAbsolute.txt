@@ -1,0 +1,12 @@
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\bin\Debug\net8.0\TblogieeServer.Shared.deps.json
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\bin\Debug\net8.0\TblogieeServer.Shared.dll
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\bin\Debug\net8.0\TblogieeServer.Shared.pdb
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\TblogieeServer.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\TblogieeServer.Shared.AssemblyInfoInputs.cache
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\TblogieeServer.Shared.AssemblyInfo.cs
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\TblogieeServer.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\TblogieeServer.Shared.sourcelink.json
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\TblogieeServer.Shared.dll
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\refint\TblogieeServer.Shared.dll
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\TblogieeServer.Shared.pdb
+C:\Users\ameen\Documents\Workspace\tblogiee-web-app\TblogieeServer\TblogieeServer.Shared\obj\Debug\net8.0\ref\TblogieeServer.Shared.dll
