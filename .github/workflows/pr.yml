@@ -36,4 +36,4 @@ jobs:
         working-directory: ./TblogieeServer
         run: |
           dotnet clean
-          dotnet build --no-restore --configuration Release
+          dotnet build
