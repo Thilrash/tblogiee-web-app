@@ -1,0 +1,39 @@
+name: Build Angular & .NET App
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the code
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Use the Node.js version that Angular requires
+
+      # Step 3: Install dependencies
+      - name: Install Dependencies
+        run: npm install
+        working-directory: ./TblogieeClient
+
+      # Setup .NET SDK
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x' # Replace with your .NET version
+  
+      # Clean and build the solution
+      - name: Clean and Build
+        working-directory: ./TblogieeServer
+        run: |
+          dotnet clean
+          dotnet build --no-restore --configuration Release
