@@ -1,0 +1,71 @@
+name:  Build, Push, and Deploy to TBlogiee App
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./TblogieeClient
+
+      - name: Build Angular app
+        run: npm run build -- --configuration=development
+        working-directory: ./TblogieeClient
+
+      - name: List files after build
+        run: ls -R TblogieeClient/dist
+        
+      # Setup .NET SDK
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x' # Replace with your .NET version
+  
+      # Clean and build the solution
+      - name: Clean and Build
+        working-directory: ./TblogieeServer
+        run: |
+          dotnet clean
+          dotnet build --no-restore --configuration Release
+
+  # Deploy:
+  #   runs-on: ubuntu-latest
+  #   needs: Build
+    
+  #   steps:
+  #     - name: Deploy to Netlify
+  #       uses: nwtgck/actions-netlify@v1.2.1
+  #       with:
+  #         publish-dir: tblogiee-client-app/dist/tblogiee-client-app
+  #         production: true
+  #       env:
+  #         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  #         NETLIFY_SITE_ID: 663a5c38-152d-4041-9463-bf3bb3abd272
+
+  Documentation:
+    runs-on: ubuntu-latest
+    needs: Build # This job will only run after the 'deploy' job completes successfully
+
+    steps:
+      # Step 8: Generate Deployment Notes
+      - name: Generate Deployment Notes
+        run: |
+          echo "## Deployment Details" > deploy-notes.md
+          echo "Build ID: $GITHUB_RUN_ID" >> deploy-notes.md
+          echo "Merge Commit: ${{ github.sha }}" >> deploy-notes.md
+          echo "Deployed by: ${{ github.actor }}" >> deploy-notes.md
+          echo "Date: $(date)" >> deploy-notes.md
