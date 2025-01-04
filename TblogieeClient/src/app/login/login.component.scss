@@ -1,0 +1,61 @@
+.container-fluid {
+  height: 100vh;
+}
+
+.row {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+
+.col-sm-3 {
+  background-color: #ffffff;
+}
+
+.poppins-regular {
+  font-weight: 600;
+}
+
+h2.poppins-regular,
+h3.podkova,
+svg.logo-left {
+  margin: 5rem;
+  padding: 0;
+}
+
+h2.poppins-regular {
+  margin-bottom: -5rem;
+}
+
+h3.podkova {
+  margin-bottom: -5rem;
+}
+
+svg.logo-right {
+  width: 50%;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+input {
+  height: 3rem;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+  border-color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+  outline: 0 none;
+}
+
+button {
+  border-radius: 0px;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+.btn-dark:hover {
+  background-color: #c9c9c9;
+  color: #000;
+}
