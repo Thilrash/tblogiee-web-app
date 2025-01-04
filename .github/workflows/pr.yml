@@ -33,7 +33,6 @@ jobs:
   
       # Clean and build the solution
       - name: Clean and Build
-        working-directory: ./TblogieeServer/TblogieeServer.API
+        working-directory: ./TblogieeServer
         run: |
           dotnet clean
-          dotnet build
