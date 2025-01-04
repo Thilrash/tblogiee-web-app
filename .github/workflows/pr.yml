@@ -14,24 +14,34 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js environment
+      # Step 2: Set up Node.js environment for Angular Client
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Use the Node.js version that Angular requires
+          node-version: '18' # Adjust if required by your Angular app
 
-      # Step 3: Install dependencies
-      - name: Install Dependencies
+      # Step 3: Install Angular dependencies
+      - name: Install Angular Dependencies
         run: npm install
         working-directory: ./TblogieeClient
 
-      # Setup .NET SDK
+      # Step 4: Build Angular Client
+      - name: Build Angular Client
+        run: npm run build
+        working-directory: ./TblogieeClient
+
+      # Step 5: Set up .NET SDK for the Server
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.x'
-  
-      # Clean and build the solution
-      - name: Clean and Build
+
+      # Step 6: Restore .NET dependencies
+      - name: Restore .NET Dependencies
+        run: dotnet restore
         working-directory: ./TblogieeServer
-        run: dotnet clean
+
+      # Step 7: Build .NET Server
+      - name: Build .NET Server
+        run: dotnet build --configuration Release
+        working-directory: ./TblogieeServer
