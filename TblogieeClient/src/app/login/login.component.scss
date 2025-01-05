@@ -1,67 +1,116 @@
 .container-fluid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 100vh;
 }
 
 .row {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.content-left {
+  flex: 2;
   background-color: #f3f3f3;
-  height: 100%;
+  position: relative;
 }
 
-.col-lg-3 {
-  background-color: #ffffff;
+.content-left h2,
+.content-left h3,
+.content-left .tblogiee-svg-left {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  margin: 0;
+  padding: 10px;
 }
 
-.poppins-regular {
-  font-weight: 600;
+.content-left h2 {
+  margin-bottom: 5.8rem;
 }
 
-h2.poppins-regular,
-h3.podkova,
-svg.logo-left {
-  margin: 5rem;
-  padding: 0;
+.content-left h3 {
+  margin-bottom: 3.8rem;
 }
 
-h2.poppins-regular {
-  margin-bottom: -5rem;
+.content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h3.podkova {
-  margin-bottom: -5rem;
+.form {
+  width: 80%;
+  max-width: 450px;
 }
 
-svg.logo-right {
-  width: 50%;
+.form-content {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 .form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 7px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.form-content input {
+  height: 3rem;
+  border-color: rgba(0, 0, 0, 0.5);
   border-radius: 0px;
 }
 
-input {
-  height: 3rem;
-  border-color: rgba(0, 0, 0, 0.5);
-}
-
-input:focus {
+.form-content input:focus {
   border-color: rgba(0, 0, 0, 0.8);
   box-shadow: none;
   outline: 0 none;
 }
 
-button {
-  border-radius: 0px;
-  padding: 0.7rem;
-  width: 100%;
+.tblogiee-svg-right {
+  margin-bottom: 1.5rem;
 }
 
-.btn-dark:hover {
-  background-color: #c9c9c9;
-  color: #000;
+.copyright-text {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
 }
 
-@media (max-width: 1000px) {
-  .col-lg-9 {
+@media (max-width: 920px) {
+  .content-left {
     display: none;
+  }
+
+  .content-right {
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .form {
+    width: 90%;
   }
 }
