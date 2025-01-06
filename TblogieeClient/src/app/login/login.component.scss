@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .row {
@@ -41,6 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .form {
