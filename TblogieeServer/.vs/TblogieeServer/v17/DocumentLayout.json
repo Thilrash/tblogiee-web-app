@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ameen\\Documents\\Repositories\\tblogiee-web-app\\TblogieeServer\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F31D29FA-FE05-4699-A150-3803F27370F4}|TblogieeServer.API\\TblogieeServer.API.csproj|c:\\users\\ameen\\documents\\repositories\\tblogiee-web-app\\tblogieeserver\\tblogieeserver.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F31D29FA-FE05-4699-A150-3803F27370F4}|TblogieeServer.API\\TblogieeServer.API.csproj|solutionrelative:tblogieeserver.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ameen\\Documents\\Repositories\\tblogiee-web-app\\TblogieeServer\\TblogieeServer.API\\Program.cs",
+              "RelativeDocumentMoniker": "TblogieeServer.API\\Program.cs",
+              "ToolTip": "C:\\Users\\ameen\\Documents\\Repositories\\tblogiee-web-app\\TblogieeServer\\TblogieeServer.API\\Program.cs",
+              "RelativeToolTip": "TblogieeServer.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T17:09:18.413Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

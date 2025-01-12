@@ -7,6 +7,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -17,7 +18,7 @@ import {
 export class RegisterComponent {
   registerForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private router: Router) {
     this.registerForm = this.formBuilder.group(
       {
         fullname: ['', Validators.required],
@@ -51,5 +52,9 @@ export class RegisterComponent {
     } else {
       console.log('Form is invalid');
     }
+  }
+
+  navigateToLogin() {
+    this.router.navigate(['/login']);
   }
 }
