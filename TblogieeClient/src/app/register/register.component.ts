@@ -49,6 +49,7 @@ export class RegisterComponent {
   onSubmit() {
     if (this.registerForm.valid) {
       console.log('Form Submitted!', this.registerForm.value);
+      this.router.navigate(['/home']);
     } else {
       console.log('Form is invalid');
     }
