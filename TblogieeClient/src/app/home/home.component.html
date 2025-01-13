@@ -1,10 +1,12 @@
 <div class="container">
-  <app-topbar></app-topbar>
+  <app-topbar class="topbar"></app-topbar>
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-3 profile-container">
       <app-profile-panel></app-profile-panel>
     </div>
-    <div class="col-lg-6"></div>
-    <div class="col-lg-3"></div>
+    <div class="col-lg-6 post-container">
+      <app-post [posts]="posts"></app-post>
+    </div>
+    <div class="col-lg-3 trend-container"></div>
   </div>
 </div>
