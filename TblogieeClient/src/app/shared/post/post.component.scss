@@ -1,0 +1,88 @@
+.post-panel {
+  margin-bottom: 0.8rem;
+}
+
+.post-panel-container {
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.badge-panel {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  column-gap: 0.8rem;
+}
+
+.bi-person-circle {
+  margin-top: -6px;
+  font-size: 2.3rem;
+  color: #000;
+}
+
+.badge-title {
+  line-height: 1px;
+}
+
+.bi-check-circle-fill {
+  font-size: 0.6rem;
+}
+
+.badge-title h5 {
+  font-size: 16px;
+}
+
+.badge-title p {
+  font-size: 12px;
+}
+
+.post-content {
+  margin-left: 0.5rem;
+}
+
+.post-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.post-desc {
+  font-size: 0.8rem;
+}
+
+.post-tools {
+  display: flex;
+  justify-content: space-between;
+  color: #494949;
+}
+
+.post-btn-icon {
+  display: flex;
+}
+
+.post-btn-icons .btn-icon .bi-star:hover {
+  color: #f0ad4e;
+}
+
+.post-btn-icons .btn-icon .bi-share:hover {
+  color: #007bff;
+}
+
+.btn-icon span {
+  margin-left: 0.2rem;
+}
+
+.btn-icon {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.post-extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-extra span {
+  margin-right: 0.5rem;
+  font-size: 14px;
+}

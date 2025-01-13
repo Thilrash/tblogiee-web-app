@@ -1,0 +1,46 @@
+<div class="post-panel" *ngFor="let post of posts">
+  <div class="post-panel-container">
+    <div class="badge-panel">
+      <i class="bi bi-person-circle"></i>
+      <div class="badge-title">
+        <h5>
+          {{ post.author }}
+          <sup
+            ><span><i class="bi bi-check-circle-fill"></i></span
+          ></sup>
+        </h5>
+        <p>{{ post.authorId }}</p>
+      </div>
+    </div>
+    <div class="post-content">
+      <div class="post-title">{{ post.title }}</div>
+      <div class="post-desc">
+        <p *ngFor="let paragraph of post.content.split('\n')">
+          {{ paragraph }}
+        </p>
+      </div>
+      <div class="post-tools">
+        <div class="post-btn-icons">
+          <button class="btn-icon">
+            <i class="bi bi-star"></i>
+            <span>{{ post.likes }}</span>
+          </button>
+          <button class="btn-icon">
+            <i class="bi bi-share"></i>
+          </button>
+        </div>
+        <div class="post-extra">
+          <span
+            ><i class="bi bi-eye"></i>
+            {{
+              post.views >= 1000
+                ? (post.views / 1000).toFixed(2) + "K"
+                : post.views
+            }}
+          </span>
+          <span>{{ post.date | date : "medium" }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
