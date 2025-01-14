@@ -2,10 +2,16 @@ import { Component } from '@angular/core';
 import { TopbarComponent } from '../shared/topbar/topbar.component';
 import { ProfilePanelComponent } from '../shared/profile-panel/profile-panel.component';
 import { PostComponent } from '../shared/post/post.component';
+import { TrendPanelComponent } from '../shared/trend-panel/trend-panel.component';
 
 @Component({
   selector: 'app-home',
-  imports: [TopbarComponent, ProfilePanelComponent, PostComponent],
+  imports: [
+    TopbarComponent,
+    ProfilePanelComponent,
+    PostComponent,
+    TrendPanelComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
