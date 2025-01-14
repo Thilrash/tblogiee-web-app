@@ -1,0 +1,20 @@
+.trend-container {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.trend-header h4 {
+  font-weight: 600;
+}
+
+.topic-list {
+  list-style: none;
+  margin-top: 1rem;
+  margin-left: -2rem;
+}
+
+@media (max-width: 768px) {
+  .trend-container {
+    display: none;
+  }
+}
