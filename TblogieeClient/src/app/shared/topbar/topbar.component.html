@@ -1,4 +1,9 @@
 <div class="top-bar">
   <div class="feed">{{ userFullName }}'s Feed</div>
-  <div class="notification"><i class="bi bi-bell"></i></div>
+  <div class="notification" (click)="toggleNotification()">
+    <i class="bi bi-bell"></i>
+  </div>
+  @if (showNotification) {
+  <app-notification-card></app-notification-card>
+  }
 </div>
