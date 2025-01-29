@@ -1,0 +1,17 @@
+<div class="notification-card">
+  <div class="header">
+    <h5>Notifications</h5>
+    <div>
+      <span><i class="bi bi-bell-fill"></i></span>
+    </div>
+  </div>
+  @for (notification of notifications; track notification.id) {
+  <div class="body">
+    <div class="icon">
+      <span><i class="bi" [classList]="notification.icon"></i></span>
+    </div>
+    <p class="title">{{ notification.title }}</p>
+    <p class="date">{{ notification.date }}</p>
+  </div>
+  }
+</div>
